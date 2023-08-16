@@ -1,0 +1,33 @@
+// const [lat, setLat] = useState()
+// const [long, setLong] = useState()
+
+// useEffect(() => {
+//     if (lat && long != undefined) {
+//         fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`)
+//         .then(res => {
+//             return res.json()
+//         }).then(data => 
+//             setCurrentData(data)
+//         )
+//     }
+// }, [lat, long])
+
+
+// useEffect(() => {
+//     if (currentData != undefined) {
+//         console.log(currentData)
+//     }
+// }, [currentData])
+
+// if (currentData != undefined && futureData != undefined) {
+//     return (
+//         <>
+//             <div className='flex justify-center items-center'>
+//                 <div>
+//                     <p>The current temperature is: {currentTemp}</p>
+//                     <p>The current weather is: <span className='capitalize'>{currentWeather}</span></p>
+//                 </div>
+//             </div>
+//         </>
+//     )
+// }
