@@ -7,4 +7,4 @@ To use, you must have NodeJS installed. If you do, simply open a terminal in thi
 ```
 npm run dev
 ```
-This will run the app locally on port 5173
+This will run the app http://localhost:5173. You will also need to allow access to your location. 
