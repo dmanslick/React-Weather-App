@@ -26,11 +26,11 @@ function App() {
     if (currentData && futureData) {
         return (
             <div className='py-10'>
-                <div className='flex flex-col justify-center items-center bg-white shadow-md w-fit p-10 mx-auto'>
+                <div className='flex flex-col justify-center items-center bg-white shadow-md w-fit p-10 mx-auto dark:text-white dark:bg-neutral-900 rounded-md'>
                     <p>The current temperature is: {currentData.main.temp.toFixed(1)}&deg;F</p>
                     <p className='my-3'>It feels like: {currentData.main.feels_like.toFixed(1)}&deg;F</p>
                     <p>The current weather is: <span className='capitalize'>{currentData.weather[0].description}</span></p>
-                    <img src={`weather_icons/${currentData.weather[0].icon}.png`} alt="Weather icon" height={150} width={150}/>
+                    <img src={`weather_icons/${currentData.weather[0].icon}.png`} alt="Weather icon" height={150} width={150} className='dark:invert'/>
                 </div>
                 <div className='flex flex-row gap-8 justify-center flex-wrap xl:flex-nowrap container mx-auto mt-10'>
                     {futureData.map(data => {
@@ -49,7 +49,7 @@ function App() {
     }
 
     return (
-        <div className='flex justify-center items-center min-h-screen'>
+        <div className='flex justify-center items-center min-h-screen dark:text-white'>
             <div className='animate-bounce text-center'>
                 <p className='text-3xl'>Loading...</p>
                 <p className='text-lg'>You must allow location access</p>
