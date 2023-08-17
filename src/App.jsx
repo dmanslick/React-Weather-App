@@ -48,7 +48,7 @@ function App() {
                         })}
                     </div>
                 </div>
-                <footer class="pb-6 text-center dark:text-white">React Weather App by: <a href="https://github.com/dmanslick" target="_blank" class="hover:text-blue-600">dmanslick</a></footer>
+                <footer className="pb-6 text-center dark:text-white">React Weather App by: <a href="https://github.com/dmanslick" target="_blank" className="hover:text-blue-600">dmanslick</a></footer>
             </>
         )
     }
@@ -59,7 +59,7 @@ function App() {
                 <div className='animate-bounce text-center'>
                     <p className='text-3xl'>Loading<span className='animate-bounce'>...</span></p>
                     <p className='text-lg'>You must allow location access</p>
-                    <small class="pb-6 text-center dark:text-white">React Weather App by: <a href="https://github.com/dmanslick" target="_blank" class="hover:text-blue-600">dmanslick</a></small>
+                    <small className="pb-6 text-center dark:text-white">React Weather App by: <a href="https://github.com/dmanslick" target="_blank" className="hover:text-blue-600">dmanslick</a></small>
                 </div>
             </div>
         </>
