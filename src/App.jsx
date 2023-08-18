@@ -10,13 +10,13 @@ function App() {
         navigator.geolocation.getCurrentPosition(position => {
             const lat = position.coords.latitude
             const long = position.coords.longitude
-            fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`)
                 .then(res => {
                     return res.json()
                 }).then(data =>
                     setCurrentData(data)
                 )
-            fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`)
+            fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}&units=imperial`)
                 .then(res => {
                     return res.json()
                 }).then(data =>
